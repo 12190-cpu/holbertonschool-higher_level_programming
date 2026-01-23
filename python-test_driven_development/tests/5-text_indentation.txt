@@ -1,0 +1,33 @@
+$ cat tests/5-text_indentation.txt
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+# Cas normal avec plusieurs séparateurs
+>>> text_indentation("Hello. How are you? Fine: thanks.")
+Hello.$
+$
+How are you?$
+$
+Fine:$
+$
+thanks.$
+$
+
+# Cas avec texte sans ponctuation
+>>> text_indentation("Hello world")
+Hello world
+
+# Cas avec espaces en trop
+>>> text_indentation("   Hello.   How are you?   ")
+Hello.$
+$
+How are you?$
+$
+
+# Cas avec un seul caractère
+>>> text_indentation("A")
+A
+
+# Cas avec mauvais type
+>>> text_indentation(123)
+Traceback (most recent call last):
+TypeError: text must be a string

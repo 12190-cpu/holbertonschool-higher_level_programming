@@ -1,0 +1,39 @@
+$ cat tests/4-print_square.txt
+>>> print_square = __import__('4-print_square').print_square
+
+# Carré de taille 4
+>>> print_square(4)
+####
+####
+####
+####
+
+# Carré de taille 1
+>>> print_square(1)
+#
+
+# Carré de taille 0 (ne rien afficher)
+>>> print_square(0)
+
+# Taille 10
+>>> print_square(10)
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+
+# Erreur : taille négative
+>>> print_square(-1)
+Traceback (most recent call last):
+ValueError: size must be >= 0
+
+# Erreur : mauvais type
+>>> print_square("4")
+Traceback (most recent call last):
+TypeError: size must be an integer

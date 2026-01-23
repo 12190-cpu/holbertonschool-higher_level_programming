@@ -1,0 +1,24 @@
+$ cat tests/3-say_my_name.txt
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+# Cas normal avec prénom et nom
+>>> say_my_name("John", "Smith")
+My name is John Smith
+
+# Cas normal avec un autre nom
+>>> say_my_name("Walter", "White")
+My name is Walter White
+
+# Cas avec uniquement le prénom
+>>> say_my_name("Bob")
+My name is Bob 
+
+# Erreur si first_name n'est pas une chaîne
+>>> say_my_name(12, "White")
+Traceback (most recent call last):
+TypeError: first_name must be a string
+
+# Erreur si last_name n'est pas une chaîne
+>>> say_my_name("John", 45)
+Traceback (most recent call last):
+TypeError: last_name must be a string
