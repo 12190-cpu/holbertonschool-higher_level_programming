@@ -11,3 +11,4 @@ ValueError: height must be greater than 0
 >>> bg.integer_validator("weight", "ten")
 Traceback (most recent call last):
 ...
+TypeError: weight must be an integer
