@@ -17,3 +17,4 @@ class BaseGeometry:
         Raises an Exception with the message 'area() is not implemented'.
         This method is meant to be overridden by subclasses.
         """
+        raise Exception("area() is not implemented")
