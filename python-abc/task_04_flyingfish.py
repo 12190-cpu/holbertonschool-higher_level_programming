@@ -38,3 +38,10 @@ class FlyingFish(Fish, Bird):
         """Redéfinit la méthode swim pour le poisson volant."""
         print("The flying fish is swimming!")
 
+    def fly(self):
+        """Redéfinit la méthode fly pour le poisson volant."""
+        print("The flying fish is soaring!")
+
+    def habitat(self):
+        """Redéfinit la méthode habitat pour le poisson volant."""
+        print("The flying fish lives both in water and the sky!")
