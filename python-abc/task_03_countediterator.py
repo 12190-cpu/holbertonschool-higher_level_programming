@@ -31,3 +31,6 @@ class CountedIterator:
         """Retourne le nombre d’éléments déjà itérés."""
         return self.count
 
+    def __iter__(self):
+        """Renvoie l’itérateur lui-même (pour le support des boucles for)."""
+        return self
