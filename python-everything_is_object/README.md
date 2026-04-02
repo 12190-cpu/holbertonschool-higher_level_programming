@@ -1,1 +1,2 @@
 Everything object
+https://www.linkedin.com/posts/farid-ghaib-212a10331_python-everything-is-object-activity-7445417402407919616-v2GK?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFOfGi4B5mZpjdzqgkfJ_oTqpw6-4bO0t-Q
